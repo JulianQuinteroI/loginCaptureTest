@@ -1,0 +1,33 @@
+h1 {
+    font-family: serif;
+    text-align: center;
+    color: #377ba8;
+    background: lightblue;
+}
+
+form {
+    width: 350px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background: #CCC;
+}
+
+form input[type="text"], form input[type="password"], form input[type="submit"] {
+    width: 250px;
+}
+
+form input {
+    margin-top: 15px;
+}
+
+form input[type="submit"] {
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+section form div img {
+    width: 60px;
+}

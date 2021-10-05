@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/miEstilo.css' ) }}>
+</head>
+
+<body>
+    <section>
+        <h1>Registro para vacunación COVID-19</h1>
+        <form action="/prueba" method="POST" name="formRegistro" onsubmit="return validar_formulario()">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" name="nombre" id="name">
+            </div>
+
+            <div>
+                <label for="user">Usuario:</label>
+                <input type="text" name="usuario" id="user">
+            </div>
+
+            <div>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sexo" id="F">Femenino
+                <input type="radio" name="sexo" id="M">Masculino
+            </div>
+
+            <div>
+                <label for="email">Correo:</label>
+                <input type="text" name="correo" id="email">
+            </div>
+
+            <div>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass" id="pass">
+                <img src={{ url_for('static', filename='img/view.svg' ) }} alt="">
+            </div>
+
+
+            <div>
+                <input type="checkbox" name="datos" id="datos">
+                <label for="datos">Declaro haber leído y aceptar las
+                    condiciones generales del programa y la normativa sobre protección de datos</label>
+            </div>
+
+            <input type="submit" value="Envío">
+        </form>
+    </section>
+</body>
+<script src={{ url_for('static', filename='js/nombre.js' ) }}></script>
+
+</html>
